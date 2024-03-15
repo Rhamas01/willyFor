@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de servicios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <form action="">
+ <div class="container" id="container">
+    <div class="encabezadob">
+     <div class="logo">
+        <img src="img/logo.png" alt="">
+     </div>
+     <div id="datosFormulario" class="datosFormulario">
+        <h2>Formato de servicios</h2>     
+     <input id="fecha" type="date" placeholder="Fecha">
+     <input id="codigo" type="text" placeholder="Código">
+    </div>
+    </div>
+
+    <div id="infoCliente" class="infoCliente">
+        <h3>1. Detalles del cliente</h3>
+        <input id="nombre" type="text" placeholder="Nombre completo">
+        <input id="telefono" type="text" placeholder="Teléfono">
+        <input id="ciudad" type="text" placeholder="Ciudad">
+        <input id="direccion" type="text" placeholder="Dirección">
+    </div>
+
+    <div id="contrato" class="contrato">
+        <h3>2. Tipo de contarto</h3>
+        <input id="contratoNombre" type="text" placeholder="Contrato">
+        <input id="obraMaterial" type="text" placeholder="Obra y Material">
+        <input id="garantiaOtros" type="text" placeholder="Garantía y otros">
+        <input id="garantiaServicio" type="text" placeholder="Garantía de servicio">
+    </div>
+
+    <div id="infoEquipo" class="infoEquipo">
+        <h3>3. Información del equipo</h3>
+        <input type="text" id="marcas" placeholder="Marcas">
+        <input type="text" id="modelos" placeholder="Modelos">
+        <input type="text" id="seriales" placeholder="Seriales">
+        <input type="text" id="refrigerante" placeholder="Refrigerante">
+        <h3>Horas de operación</h3>
+        <input type="number" id="operacion" class="sis" placeholder="Sistema 1">
+        <input type="number" id="operacion2" class="sis" placeholder="Sistema 2">
+        <h3>Número de arranques</h3>
+        <input type="number" id="arranque" placeholder="Sistema 1:">
+        <input type="number" id="arranque2" placeholder="Sistema 2:">
+        <p></p>
+        <input type="text" id="aceite" placeholder="Aceite:">
+        <input type="text" id="arrancador" placeholder="Arrancador:">
+    </div>
+
+    <div class="condicionesTrabajo" id="condicionesTrabajo">
+       <h3>4. Condiciones físicas del sitio de trabajo(propiedad cliente)</h3>
+       <select name="" id="condicion" >
+        <option value="">Elige un estado</option>
+        <option value="Buen_Estado">Buen estado</option>
+        <option value="Mal estado">Mal estado</option>
+       </select><br>
+       <input type="text" id="observacion" placeholder="Observaciones:">
+    </div>
+
+    <div class="DescripcionServicio">
+       <h3>5. Descripción general del servicio</h3>
+       <input type="text" name="" id="descripcionGeneral" placeholder="Escribe una descripción">
+    </div>
+
+    <div class="actividades" id="actividades">
+        <h3>6. Descripción Actividades</h3>
+        <input class="uploadedImage" type="file" id="fileInput" accept="image/*">
+        <input type="text" id="observaciones" placeholder="Escribe las observaciones">
+        
+    </div>
+
+    <div class="estadoServicio" id="estadoServicio">
+        <h3>7. Se completaron todas las tareas</h3>
+        <select name="" id="tarea">
+            <option value="">Elige una opción</option>
+            <option value="Si_completas_las_tareas">SI</option>
+            <option value="NO_completas_las_tareas">NO</option>
+        </select>       
+    </div>
+
+    <div class="repuestos" id="repuestos">
+        <h3>8. Repuestos sugeridos</h3>
+        <p>Repuesto 1</p>
+        <input class="repuestosInput" id="cantidad" type="number" placeholder="cantidad">
+        <input class="repuestosInput" id="numeroParte" type="text" placeholder="Número de parte">
+        <input class="repuestosInput" id="detalle" type="text" placeholder="Detalles">
+
+        <p>Repuesto 2</p>
+        <input class="repuestosInput" id="cantidad2" type="number" placeholder="cantidad">
+        <input class="repuestosInput" id="numeroParte2" type="text" placeholder="Número de parte">
+        <input class="repuestosInput" id="detalle2" type="text" placeholder="Detalle">
+
+        <p>Repuesto 3</p>
+        <input class="repuestosInput" id="cantidad3" type="number" placeholder="cantidad">
+        <input class="repuestosInput" id="numeroParte3" type="text" placeholder="Número de parte">
+        <input class="repuestosInput" id="detalle3" type="text" placeholder="Detalles">
+    </div>
+
+    <div id="manoObra" class="manoObra">
+        <h3>9. Mano de obra</h3>
+        <input id="fechaObra" type="date" placeholder="Fecha">
+        <input type="text" id="nombreTecnico1" placeholder="Nombre del técnico">
+        <p>Hora de llegada</p>
+        <input type="time" id="horaLlegada" placeholder="Hora de llegada">
+        <p>Hora de Salida</p>
+        <input type="time" id="horaSalida" placeholder="Hora de salida">
+        <p>Horas Totales</p>
+        <input type="number" id="horasTotales" placeholder="Horas Totales">
+    </div>
+
+    <div id="tecnico" class="tecnico">
+        <h2>Servicio prestado por</h2>
+    </div>
+
+    <input type="text" id="nombreTecnico" placeholder="Nombre Técnico">
+    <input type="text" id="telefonoTecnico" placeholder="Télefono">
+
+    <p>Firma</p>
+
+    <div class="contenedor">
+
+		<div class="row">
+			<div class="col-md-12">
+		 		<canvas id="draw-canvas" width="330" height="200">
+		 			No tienes un buen navegador.
+		 		</canvas>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<input type="button" class="button" id="draw-submitBtn" value="Crear Firma"></input>
+				<input type="button" class="button" id="draw-clearBtn" value="Borrar Firma"></input>						
+						<input type="color" id="color">						
+						<input type="range" id="puntero" min="1" default="1" max="5" width="10%">
+			</div>
+		</div>
+		<br/> 
+                
+	</div>
+</form>
+
+    <button 
+    type="button"
+    id="btn-generar"
+    class="button btn-generar"
+    value="Generar Reporte"
+    onclick="generarReporte()"     
+    >Generar Reporte</button>
+    <a type="button" onclick="cambiarEstilo()" class="button">Mostrar reporte</a>
+  </div>
+
+  <div class="container2" id="container2">
+    <div class="encabezado">
+      <div class="logob"><img src="img/logo.png" alt=""></div>
+      <div class="titulo"><h1>Formato de servicio</h1></div>
+      <div class="datosForm">
+         <p id="fechaOut">__/__/__</p>
+         <p id="codigoOut">--</p>
+      </div>
+    </div>
+    <div class="separador"></div>
+
+    <div class="datosCliente">
+     <h3>1. Datos del Cliente</h3>
+     <div class="clienteDivs">
+        <tr>
+            <th><p id="nombreOut">/</p></th>
+            <th><p id="telefonoOut">/</p></th>
+            <th><p id="ciudadOut">/</p></th>
+            <th><p id="direccionOut">/</p></th>
+        </tr>           
+        
+     </div>
+    </div>
+
+    <div class="datosCliente">
+     <h3>2. Tipo de contrato</h3>
+     <div class="clienteDivs">
+        <tr>
+            <th><p id="contratoNombreOut">/</p></th>
+            <th><p id="obraMaterialOut">/</p></th>
+            <th><p id="garantiaOtrosOut">/</p></th>
+            <th><p id="garantiaServicioOut">/</p></th>
+         </tr>
+     </div>        
+      
+    </div>
+
+    <div class="datosCliente">
+       <h3>3. Datos del equipo</h3>
+       <div class="clienteDivs">
+        <tr>
+            <th><p id="marcasOut">/</p></th>
+            <th><p id="modelosOut">/</p></th>
+            <th><p id="serialesOut">/</p></th>
+            <th><p id="refrigeranteOut">/</p></th>
+            <th><p id="aceiteOut">/</p></th>
+        </tr> <br>       
+
+       </div>
+       <div class="clienteDivs">
+        <tr>
+            <th><p id="operacionOut">/</p></th>
+            <th><p id="operacion2Out">/</p></th>
+            <th><p id="arranqueOut">/</p></th>
+            <th><p id="arranque2Out">/</p></th>
+            <th><p id="arrancadorOut">/</p></th>
+        </tr>
+       </div>
+    </div>
+
+    <div class="datosCliente">
+        <h3>4. Condiciones físicas del sitio de Trabajo(propiedad cliente)</h3>
+        <div class="clienteDivs">
+            <tr>
+                <th><p id="condicionOut"></p></th>                
+                <th><p  id="observacionOut"></p></th>
+            </tr>
+        </div>
+    </div>
+
+    <div class="datosCliente">
+        <h3>5. Descripción general del servicio</h3>
+        <p id="descripcionGeneralOut">/</p>
+    </div>
+
+    <div class="datosCliente">
+       <h3>6. Actividades princpales</h3>
+       <div id="actividadesOut">
+        
+            <div class="imageContainer" id="imageContainer"></div>
+            <div class="imageContainer" id="imageContainer2"></div>
+            <div class="imageContainer" id="imageContainer3"></div>        
+        <br>
+                   
+       </div>
+       <p id="observacionesOut">/</p>
+    </div>
+
+    <div class="datosCliente">
+        <h3>7. Estado del servcio</h3>
+        <p id="tareaOut">/</p>
+    </div>
+    <div class="datosCliente">
+        <h3>8. Repuestos Sugeridos</h3>
+        <div id=""></div>
+        <div class="clienteDivs" id="repuestosDivs">
+            <tr>
+                <th><p id="cantidadOut">/</p></th>
+                <th><p id="numeroParteOut">/</p></th>
+                <th><p id="detalleOut">/</p></th>
+            </tr>
+        </div>
+        <div class="clienteDivs" id="">
+            <tr>
+                <th><p id="cantidad2Out">/</p></th>
+                <th><p id="numeroParte2Out">/</p></th>
+                <th><p id="detalle2Out">/</p></th>
+            </tr>
+        </div>
+        <div class="clienteDivs" id="">
+            <tr>
+                <th><p id="cantidad3Out">/</p></th>
+                <th><p id="numeroParte3Out">/</p></th>
+                <th><p id="detalle3Out">/</p></th>
+            </tr>
+        </div>
+          
+        
+    </div>
+    <div class="datosCliente">
+        <h3>9. Mano de obra</h3>
+        <div class="clienteDivs" id="manoObraDivs">
+            <tr>
+                <th><p id="fechaObraOut">/</p></th>
+                <th><p id="nombreTecnico1Out">/</p></th>
+                <th><p id="horaLlegadaOut">/</p></th>
+                <th><p id="horaSalidaOut">/</p></th>
+                <th><p id="horasTotalesOut">/</p></th>
+            </tr>
+        </div>
+
+        <div class="tecnicoDatos">
+            <h2>Servicio prestado por</h2>
+            <div class="clienteDivs">
+                <p id="nombreTecnicoOut">Nombre:</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea style="display: none;" id="draw-dataUrl" class="form-control" rows="5">Para los que saben que es esto:</textarea>
+                    </div>
+                </div>
+                <br/>
+                <div class="contenedor">
+                    <div class="col-md-12">
+                        <img id="draw-image" src="" alt="Tu firma aparecera Aqui!"/>
+                    </div>
+                </div>
+                <p id="telefonoTecnicoOut">Teléfono</p>
+            </div>
+        </div>
+    </div>
+    <BR></BR>
+    <a class="button" name="imprimir" onclick="window.print();">Guardar PDF </a>
+    <a class="button" name="imprimir" href="willyFormulario.html">Volver al formulario</a>
+</div>
+    <script type="text/javascript" src="js/jspdf.min.js" ></script>
+    <script src="js/html2pdf.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+    <script src="js/firma.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

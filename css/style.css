@@ -1,0 +1,283 @@
+body {
+    background-color: rgb(206, 229, 243);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    display: flex;
+    justify-content: center;   
+}
+h2{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+h3{
+    background-color: navy;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+th p{
+    width: 250px;
+}
+
+select{
+    border: 1px solid;
+    padding: 20px;
+    width: 83%;
+    border-radius: 5px;
+
+}
+
+option {
+    background-color: #96a5ad;
+}
+
+.container {
+    margin-top: 20px ;
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border: 1px gray;
+    border-radius: 10px;
+    display: visible;
+    
+}
+
+@media (max-width: 600px) {
+    .container {
+      max-width: 100%;  
+      background-color: #ffffff;
+      padding: 5px;
+      margin-top: 1px;
+      margin-left: 1px;
+
+    }
+}
+
+
+.logo{
+    position: relative;
+    text-align: end;
+}
+
+.logo img {
+    width: 200px;
+}
+
+input {
+    width: 80%; 
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+
+.fileUp{
+ 
+    background-color: aqua;
+    width: 100px;
+    padding: 2px;
+    margin: 2px;
+    width: 200px;
+}
+
+.repuestosInput{
+    width: 30%;
+}
+
+
+
+
+#draw-canvas {
+    border: 2px dotted #CCCCCC;
+    border-radius: 5px;
+    cursor: crosshair;
+  }
+  
+  #draw-dataUrl {
+    width: 100%;
+  }
+  
+  header {
+      background: #273B47;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  section{
+      flex:1;
+  }  
+  
+  .button {
+      background: #3071a9;
+      box-shadow: inset 0 -3px 0 rgba(0,0,0,.3);
+      font-size: 14px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+  }
+  
+  .button:active {
+      transform: scale(0.9);
+  }
+  
+  .contenedor {
+      width: 100%;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .instrucciones {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items:center;
+      margin-bottom: 10px;
+  }
+  
+  label {
+      margin: 0 15px;
+  }
+
+  .container2{    
+    padding: 50px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;  
+  }
+  .container2 h3 {
+    margin-top: 1px;
+    border-radius: 0px;
+  
+  }
+
+  th {
+    margin-left: 20px;
+    padding: 20px;
+  }
+
+  .encabezado{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+   
+  }
+  .encabezado img{
+    width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .encabezado h1{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .encabezado {
+     display: block ;
+    }
+}
+@media (max-width: 600px) {
+  .encabezado h1 {
+   left: 0; ;
+  }
+}
+
+  .datosForm{
+    text-align: end;
+    margin-left:150px;
+    padding: 10px;
+  }
+
+  .datosCliente{
+    border: 1px solid;
+    margin-top: 5px;
+  }
+
+
+  .clienteDivs{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    
+  }
+
+  @media (max-width: 600px) {
+    .clienteDivs {
+     display: block ;
+    }
+}
+
+  .clienteDivs p{
+    margin-left: 30px;
+    border: 1px solid;
+    padding: 5px;
+
+  }
+
+  .tipoContrato{
+    margin-top: 5px;
+    border: 1px solid black;
+  }
+  .contratoDivs {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+
+  }
+
+  .equipoSalida{
+    margin-top: 5px;
+    border: 1px solid;
+  }
+
+  .equiposDivs {
+    display: flex;
+    margin: 20px;
+  }
+
+  .condiciones {
+    border: 1px solid;
+  }
+
+  
+  #imageContainer {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+
+  }
+  #uploadedImage {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #actividadesOut{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
