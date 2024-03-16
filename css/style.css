@@ -64,6 +64,8 @@ option {
 
 .logo img {
     width: 200px;
+    margin-right: 110px;
+    margin-top: 40px;
 }
 
 input {
