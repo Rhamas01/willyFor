@@ -176,6 +176,11 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
   reader.onload = function(event) {
     var imageUrl = event.target.result;
     var imageContainer = document.getElementById('imageContainer');
+    var imageContainer2 = document.getElementById('imageContainer2');
+     var imageContainer3 = document.getElementById('imageContainer3');
+     var imageContainer4 = document.getElementById('imageContainer4');
+     var imageContainer5 = document.getElementById('imageContainer5');
+     var imageContainer6 = document.getElementById('imageContainer6');
     var imgElement = document.createElement('img');
 
     imgElement.src = imageUrl;
