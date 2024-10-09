@@ -170,17 +170,13 @@ function generarReporte(){
 }
 
 document.getElementById('fileInput').addEventListener('change', function(event) {
-  var file = event.target.files[0];
+  var file = event.target.files[5];
   var reader = new FileReader();
 
   reader.onload = function(event) {
     var imageUrl = event.target.result;
     var imageContainer = document.getElementById('imageContainer');
-    var imageContainer2 = document.getElementById('imageContainer2');
-     var imageContainer3 = document.getElementById('imageContainer3');
-     var imageContainer4 = document.getElementById('imageContainer4');
-     var imageContainer5 = document.getElementById('imageContainer5');
-     var imageContainer6 = document.getElementById('imageContainer6');
+//images
     var imgElement = document.createElement('img');
 
     imgElement.src = imageUrl;
