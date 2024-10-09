@@ -170,7 +170,7 @@ function generarReporte(){
 }
 
 document.getElementById('fileInput').addEventListener('change', function(event) {
-  var file = event.target.files[0,1,2,3,4,5];
+  var file = event.target.files[0];
   var reader = new FileReader();
 
   reader.onload = function(event) {
